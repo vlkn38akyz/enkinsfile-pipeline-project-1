@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage ('build') {
+        stage('build') {
             steps {
-                echo 'Comilinng the java source code'
+                echo 'Compiling the java source code'
                 sh 'javac Hello.java'
             }
         }
@@ -13,5 +13,5 @@ pipeline {
                 sh 'java Hello'
             }
         }
-     }
+    }
 }
